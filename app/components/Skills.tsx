@@ -40,15 +40,16 @@ export function Skills() {
               "JavaScript",
               "HTML & CSS",
               "Tailwind CSS",
+              "Responsive layout & design systems",
             ]}
           />
           <Block
             title="State & Data"
             items={[
-              "REST API integration",
-              "React Query / TanStack Query",
+              "REST APIs (fetch/axios), async patterns",
+              "Vite",
               "Zustand / Context API",
-              "Forms and validation",
+              "Forms and validation - e.g. Zod/Joi",
               "Loading, empty and error states",
             ]}
           />
@@ -60,6 +61,7 @@ export function Skills() {
               "Vercel / Render deployments",
               "Chrome DevTools",
               "Agile teamwork (standups, feedback loops)",
+              "Testing basics (Jest / React Testing Library)",
             ]}
           />
           <Block
@@ -67,7 +69,7 @@ export function Skills() {
             items={[
               "Figma (wireframes, prototypes, UI)",
               "User flow mapping",
-              "Accessibility basics (WCAG)",
+              "Accessibility basics",
               "Design-to-code handoff",
               "AI-assisted development workflow",
             ]}
@@ -77,7 +79,7 @@ export function Skills() {
         <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
           <p className="text-sm text-zinc-700">
             <span className="font-semibold text-zinc-900">Backend basics:</span>{" "}
-            Node.js/Express, CORS, Amazon DynamoDB (course work)
+            Node.js/Express, REST APIs, CORS, Amazon DynamoDB
           </p>
         </div>
       </div>

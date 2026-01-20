@@ -22,10 +22,10 @@ export function Contact() {
 
         <div className="mt-6 flex flex-wrap gap-3">
           {/* Replace these */}
-          <LinkButton href="mailto:your.email@example.com" label="Email" />
-          <LinkButton href="https://github.com/yourusername" label="GitHub" />
+          <LinkButton href="mailto:fatmabetuld@gmail.com" label="Email" />
+          <LinkButton href="https://github.com/FBetulDemir" label="GitHub" />
           <LinkButton
-            href="https://www.linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/betuldemir"
             label="LinkedIn"
           />
         </div>

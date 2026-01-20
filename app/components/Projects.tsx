@@ -1,6 +1,9 @@
+import Image from "next/image";
+
 type Project = {
   title: string;
   description: string;
+  image: string;
   tech: string[];
   bullets: string[];
   learning: string;
@@ -9,56 +12,69 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "TaskFlow Dashboard",
+    title: "Designish — Modern E-commerce Store",
     description:
-      "A task management dashboard focused on clear flows, real-time feel, and role-based UI.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Query", "REST API"],
+      "A modern, responsive online clothing store with dynamic product fetching, product details, cart and wishlist flows, and a clean UI built for a smooth shopping experience.",
+    image: "/projects/designish.png",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "Fake Store API",
+      "Framer Motion",
+      "Local Storage",
+    ],
     bullets: [
-      "Designed the UX/UI and user flow in Figma, then moved into implementation",
-      "Built reusable UI components and consistent layouts",
-      "Integrated API data with loading, empty and error states",
-      "Focused on clarity: predictable navigation, clear calls-to-action",
+      "Built responsive product listing and product detail views",
+      "Implemented shopping cart with quantity updates and persistence",
+      "Added wishlist functionality with persisted state",
+      "Dark mode toggle with consistent design tokens and UI states",
+      "Dynamic data fetching from Fake Store API with loading/empty/error states",
+      "Enhanced UX with motion/animations and toast feedback",
     ],
     learning:
-      "Improved my ability to translate UX decisions into clean frontend structure and keep UI scalable.",
+      "I improved my ability to structure a frontend app around real user flows (browse → compare → save → purchase), keep state predictable across routes (cart/wishlist), and build a polished UI with strong responsiveness and feedback states.",
     links: [
-      { label: "View Code", href: "https://github.com/" },
-      { label: "Live Demo", href: "https://example.com" },
+      {
+        label: "View Code",
+        href: "https://github.com/FBetulDemir/ecommerce_website.git",
+      },
+      {
+        label: "Live Demo",
+        href: "https://ecommerce-website-designish.netlify.app/",
+      },
     ],
   },
   {
-    title: "E-commerce Product Configurator",
+    title: "Chappy — Real-Time Chat Application",
     description:
-      "Multi-step product customization with cart management and checkout-ready UI patterns.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Zustand", "Stripe API"],
+      "A full-stack chat app with public/locked channels, direct messages, and JWT authentication. Built to demonstrate practical frontend + backend integration and deployment.",
+    image: "/projects/chappyApp.png",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "DynamoDB",
+      "JWT",
+      "Zustand",
+    ],
     bullets: [
-      "Implemented multi-step flow with validation and progress feedback",
-      "State management for cart and options with persistence",
-      "Dynamic pricing and responsive product preview",
-      "Polished UI states for a smooth shopping experience",
+      "Language: Swedish UI",
+      "Demo account: username: test / password: test123",
+      "Implemented JWT-based authentication with secure login and registration",
+      "Built public and locked channels with owner-only deletion rules",
+      "Developed channel messaging with usernames and timestamps",
+      "Built private direct messages (DM) between users",
+      "Added user account management with self-delete functionality",
+      "Integrated AWS DynamoDB using a single-table design",
     ],
     learning:
-      "Learned to structure complex UI state and keep the codebase readable as features grow.",
+      "This project deepened my understanding of full-stack architecture, especially authentication flows, authorization rules, and frontend–backend coordination. I also learned to deploy a combined frontend and backend application and handle real-world issues such as static file serving and environment configuration.",
     links: [
-      { label: "View Code", href: "https://github.com/" },
-      { label: "Live Demo", href: "https://example.com" },
-    ],
-  },
-  {
-    title: "Analytics Platform UI",
-    description:
-      "Dashboard UI with filters, tables, and chart visualizations for fast decision-making.",
-    tech: ["React", "TypeScript", "Recharts", "TanStack Table", "Tailwind CSS"],
-    bullets: [
-      "Built interactive charts and tables with sorting/filtering",
-      "Created a clean data layout that stays readable on mobile",
-      "Added export-friendly patterns and UI feedback states",
-    ],
-    learning:
-      "Got better at performance-minded UI and presenting dense information clearly.",
-    links: [
-      { label: "View Code", href: "https://github.com/" },
-      { label: "Live Demo", href: "https://example.com" },
+      { label: "View Code", href: "https://github.com/FBetulDemir/chappy-app" },
+      { label: "Live Demo", href: "https://chappy-app-hk0i.onrender.com" },
     ],
   },
 ];
@@ -91,7 +107,16 @@ export function Projects() {
             className="rounded-2xl border border-zinc-200 bg-white shadow-sm">
             <div className="grid gap-0 md:grid-cols-2">
               {/* Image placeholder */}
-              <div className="min-h-[220px] rounded-t-2xl bg-zinc-100 md:rounded-l-2xl md:rounded-tr-none" />
+
+              <div className="relative min-h-[220px] overflow-hidden rounded-t-2xl bg-zinc-100 md:rounded-l-2xl md:rounded-tr-none">
+                <Image
+                  src={p.image}
+                  alt={`${p.title} preview`}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                />
+              </div>
 
               <div className="p-6 md:p-7">
                 <h3 className="text-xl font-semibold tracking-tight">
