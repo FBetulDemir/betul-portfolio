@@ -15,7 +15,7 @@ const projects: Project[] = [
     title: "Designish — Modern E-commerce Store",
     description:
       "A modern, responsive online clothing store with dynamic product fetching, product details, cart and wishlist flows, and a clean UI built for a smooth shopping experience.",
-    image: "/projects/designish.png",
+    image: "/projects/project-1.png",
     tech: [
       "React",
       "Vite",
@@ -28,10 +28,7 @@ const projects: Project[] = [
     bullets: [
       "Built responsive product listing and product detail views",
       "Implemented shopping cart with quantity updates and persistence",
-      "Added wishlist functionality with persisted state",
-      "Dark mode toggle with consistent design tokens and UI states",
       "Dynamic data fetching from Fake Store API with loading/empty/error states",
-      "Enhanced UX with motion/animations and toast feedback",
     ],
     learning:
       "I improved my ability to structure a frontend app around real user flows (browse → compare → save → purchase), keep state predictable across routes (cart/wishlist), and build a polished UI with strong responsiveness and feedback states.",
@@ -65,7 +62,7 @@ const projects: Project[] = [
       "Demo account: username: test / password: test123",
       "Implemented JWT-based authentication with secure login and registration",
       "Built public and locked channels with owner-only deletion rules",
-      "Developed channel messaging with usernames and timestamps",
+      "Developed channel messaging with usernames",
       "Built private direct messages (DM) between users",
       "Added user account management with self-delete functionality",
       "Integrated AWS DynamoDB using a single-table design",
