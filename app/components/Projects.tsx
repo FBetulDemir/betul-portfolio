@@ -12,6 +12,38 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
+    description:
+      "I owned the UX/UI redesign end-to-end (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
+    image: "/projects/framsteg.png",
+    tech: [
+      "Figma",
+      "UX research",
+      "User flows",
+      "Prototyping",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
+    bullets: [
+      "Conducted user research, identified usability issues, and created the new user flows",
+      "Designed the complete interface in Figma (screens, components, states, interactions) with PO feedback",
+      "Implemented reusable UI components in Next.js (TypeScript + Tailwind)",
+      "Built Organisation Settings and Upload pages and continue expanding the frontend",
+      "Worked iteratively in weekly standups and improved solutions based on feedback",
+    ],
+    learning:
+      "This internship strengthened my ability to take ownership from research and user flow to UI design and production-ready frontend delivery. I improved design-to-code handoff, component reuse, and building reliable UI states in a real team environment.",
+    links: [
+      {
+        label: "Figma Prototype",
+        href: "https://www.figma.com/proto/aLiigZwDD8KzbnndT76vRW/Framsteg-1?page-id=0%3A1&node-id=53-407&p=f&viewport=-2608%2C2000%2C0.19&t=9PM2dtK0Epssg1wX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A407",
+      },
+    ],
+  },
+
+  {
     title: "Designish — Modern E-commerce Store",
     description:
       "A modern, responsive online clothing store with dynamic product fetching, product details, cart and wishlist flows, and a clean UI built for a smooth shopping experience.",
