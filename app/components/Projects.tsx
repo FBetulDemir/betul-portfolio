@@ -14,8 +14,8 @@ const projects: Project[] = [
   {
     title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
     description:
-      "I owned the UX/UI redesign end-to-end (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
-    image: "/projects/framsteg.png",
+      "I owned the UX/UI redesign end-to-end  (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
+    image: "/projects/project-2.png",
     tech: [
       "Figma",
       "UX research",
@@ -31,7 +31,7 @@ const projects: Project[] = [
       "Designed the complete interface in Figma (screens, components, states, interactions) with PO feedback",
       "Implemented reusable UI components in Next.js (TypeScript + Tailwind)",
       "Built Organisation Settings and Upload pages and continue expanding the frontend",
-      "Worked iteratively in weekly standups and improved solutions based on feedback",
+      "Worked iteratively in standups and improved solutions based on feedback",
     ],
     learning:
       "This internship strengthened my ability to take ownership from research and user flow to UI design and production-ready frontend delivery. I improved design-to-code handoff, component reuse, and building reliable UI states in a real team environment.",
@@ -46,7 +46,7 @@ const projects: Project[] = [
   {
     title: "Designish — Modern E-commerce Store",
     description:
-      "A modern, responsive online clothing store with dynamic product fetching, product details, cart and wishlist flows, and a clean UI built for a smooth shopping experience.",
+      "A modern, responsive online clothing store with dynamic product fetching, product details, cart, and a clean UI built for a smooth shopping experience.",
     image: "/projects/project-1.png",
     tech: [
       "React",
@@ -60,10 +60,11 @@ const projects: Project[] = [
     bullets: [
       "Built responsive product listing and product detail views",
       "Implemented shopping cart with quantity updates and persistence",
-      "Dynamic data fetching from Fake Store API with loading/empty/error states",
+      "Dynamic data fetching from Fake Store API",
+      "Key decisions: persisted cart in localStorage, route-based state with React Router, consistent UI states for async views",
     ],
     learning:
-      "I improved my ability to structure a frontend app around real user flows (browse → compare → save → purchase), keep state predictable across routes (cart/wishlist), and build a polished UI with strong responsiveness and feedback states.",
+      "I improved my ability to structure a frontend app around real user flows, and build a polished UI with strong responsiveness",
     links: [
       {
         label: "View Code",
