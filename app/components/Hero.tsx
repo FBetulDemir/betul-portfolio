@@ -3,7 +3,8 @@ export function Hero() {
     <section className="mx-auto max-w-6xl px-4 pt-14 pb-10 md:pt-20">
       <div className="max-w-3xl">
         <span className="inline-flex items-center rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-700">
-          Frontend Developer & Interface Designer
+          Betül Demir Korkmaz — Frontend Developer & Interface Designer — Sweden
+          / Remote
         </span>
 
         <h1 className="mt-6 text-4xl font-semibold tracking-tight text-zinc-900 md:text-6xl">
@@ -14,6 +15,11 @@ export function Hero() {
           I design in Figma first, then implement the UI with Next.js,
           TypeScript and Tailwind CSS. I enjoy turning product goals and user
           needs into simple flows and maintainable frontend code.
+        </p>
+        <p className="mt-4 text-sm font-medium text-zinc-700 md:text-base">
+          Available for{" "}
+          <span className="text-zinc-900">LIA 2 (Spring 2026)</span>. Based in
+          Sweden. Open to remote/on-site.
         </p>
 
         <div className="mt-8 flex items-center gap-3">
@@ -27,6 +33,13 @@ export function Hero() {
             href="#contact"
             className="inline-flex items-center justify-center rounded-lg border border-zinc-200 px-4 py-2.5 text-sm font-medium text-zinc-900 hover:bg-zinc-50 transition">
             Get in touch
+          </a>
+
+          <a
+            href="/cv/Betul-Demir-CV.pdf"
+            download
+            className="inline-flex items-center justify-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-50">
+            Download CV
           </a>
         </div>
       </div>

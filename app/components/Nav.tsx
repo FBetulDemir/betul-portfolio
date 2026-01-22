@@ -10,7 +10,7 @@ export function Nav() {
     <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a href="#" className="text-sm font-semibold tracking-tight">
-          Portfolio
+          Betül Demir Korkmaz
         </a>
 
         <nav className="hidden gap-6 text-sm text-zinc-600 md:flex">

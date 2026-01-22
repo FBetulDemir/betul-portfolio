@@ -21,7 +21,6 @@ export function Contact() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          {/* Replace these */}
           <LinkButton href="mailto:fatmabetuld@gmail.com" label="Email" />
           <LinkButton href="https://github.com/FBetulDemir" label="GitHub" />
           <LinkButton
