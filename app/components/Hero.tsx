@@ -18,8 +18,8 @@ export function Hero() {
         </p>
         <p className="mt-4 text-sm font-medium text-zinc-700 md:text-base">
           Available for{" "}
-          <span className="text-zinc-900">LIA 2 (Spring 2026)</span>. Based in
-          Sweden. Open to remote/on-site.
+          <span className="text-zinc-900">Internship (LIA-2, Spring 2026)</span>
+          . Based in Sweden. Open to remote/on-site.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -36,7 +36,7 @@ export function Hero() {
           </a>
 
           <a
-            href="/cv/Betul-Demir-CV.pdf"
+            href="/cv/F_Betul_Demir_K_2026_CV.pdf"
             download
             className="inline-flex items-center justify-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-50">
             Download CV
