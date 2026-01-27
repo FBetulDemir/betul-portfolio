@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+type ProjectNote = { text: string };
+
 type Project = {
   title: string;
   description: string;
@@ -8,6 +10,7 @@ type Project = {
   bullets: string[];
   learning: string;
   links?: { label: string; href: string }[];
+  notes?: ProjectNote[];
 };
 
 const projects: Project[] = [
@@ -15,7 +18,7 @@ const projects: Project[] = [
     title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
     description:
       "I owned the UX/UI redesign end-to-end  (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
-    image: "/projects/project-2.png",
+    image: "/projects/figma-organisation.png",
     tech: [
       "Figma",
       "UX research",
@@ -37,8 +40,13 @@ const projects: Project[] = [
       "This internship strengthened my ability to take ownership from research and user flow to UI design and production-ready frontend delivery. I improved design-to-code handoff, component reuse, and building reliable UI states in a real team environment.",
     links: [
       {
-        label: "Figma Prototype",
-        href: "https://www.figma.com/proto/aLiigZwDD8KzbnndT76vRW/Framsteg-1?page-id=0%3A1&node-id=53-407&p=f&viewport=-2608%2C2000%2C0.19&t=9PM2dtK0Epssg1wX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=53%3A407",
+        label: "View public preview (Organisation Settings flow — 4 screens)",
+        href: "https://www.figma.com/proto/ADLGSp5yKjSQ2WeMup0UPo/Framsteg-Organisation-settings?page-id=0%3A1&node-id=1-663&p=f&viewport=503%2C511%2C0.16&t=VDUXel5AJhoC6vWP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A8",
+      },
+    ],
+    notes: [
+      {
+        text: "Full redesign is confidential; private walkthrough available upon request (interviews / recruiters).",
       },
     ],
   },
@@ -182,18 +190,34 @@ export function Projects() {
                   </p>
                 </div>
 
-                {p.links && (
-                  <div className="mt-5 flex flex-wrap gap-3">
-                    {p.links.map((l) => (
-                      <a
-                        key={l.label}
-                        href={l.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700">
-                        {l.label}
-                      </a>
-                    ))}
+                {(p.links || p.notes) && (
+                  <div className="mt-5 space-y-2">
+                    {p.links && (
+                      <div className="flex flex-wrap gap-3">
+                        {p.links.map((l) => (
+                          <a
+                            key={l.label}
+                            href={l.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-sm font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700">
+                            {l.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+
+                    {p.notes && (
+                      <div className="space-y-1">
+                        {p.notes.map((n) => (
+                          <p
+                            key={n.text}
+                            className="text-sm leading-relaxed text-zinc-600">
+                            {n.text}
+                          </p>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 )}
               </div>
