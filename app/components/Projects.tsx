@@ -6,6 +6,7 @@ type Project = {
   title: string;
   description: string;
   image: string;
+  imageFit?: "cover" | "contain";
   tech: string[];
   bullets: string[];
   learning: string;
@@ -47,6 +48,43 @@ const projects: Project[] = [
     notes: [
       {
         text: "Full redesign is confidential; private walkthrough available upon request (interviews / recruiters).",
+      },
+    ],
+  },
+
+  {
+    title: "ChoreQuest — Household Chore Tracker (Mobile App)",
+    description:
+      "A two-person household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard with weekly/monthly/all-time views.",
+    image: "/projects/choresApp.png",
+    imageFit: "contain",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase Auth",
+      "Cloud Firestore",
+      "PWA",
+    ],
+    bullets: [
+      "Built authentication flow with Firebase Auth (sign up / sign in)",
+      "Implemented household system with create/join by code functionality",
+      "Created chore templates with recurring schedules (daily/weekly/monthly/seasonal)",
+      "Developed assignee modes: anyone, fixed person, or rotating",
+      "Built Today view showing due chores, completions, and points earned",
+      "Implemented leaderboard with weekly/monthly/all-time score tracking",
+      "Deployed as a PWA — installable on mobile without an app store",
+    ],
+    learning:
+      "This project strengthened my understanding of Firebase integration, real-time data with Firestore, and building gamification features. I learned to design data models for multi-user households and implement point-based scoring systems.",
+    links: [
+      {
+        label: "View Code",
+        href: "https://github.com/FBetulDemir/chorequest",
+      },
+      {
+        label: "Live Demo",
+        href: "https://chorequest-game.vercel.app/",
       },
     ],
   },
@@ -151,7 +189,9 @@ export function Projects() {
                   src={p.image}
                   alt={`${p.title} preview`}
                   fill
-                  className="object-cover"
+                  className={
+                    p.imageFit === "contain" ? "object-contain" : "object-cover"
+                  }
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
