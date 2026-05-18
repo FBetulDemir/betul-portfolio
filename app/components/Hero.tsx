@@ -17,9 +17,7 @@ export function Hero() {
           needs into simple flows and maintainable frontend code.
         </p>
         <p className="mt-4 text-sm font-medium text-zinc-700 md:text-base">
-          Available for{" "}
-          <span className="text-zinc-900">Internship (LIA-2, Spring 2026)</span>
-          . Based in Sweden. Open to remote/on-site.
+          Available for work. Based in Sweden. Open to remote/on-site.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">

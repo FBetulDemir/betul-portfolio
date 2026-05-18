@@ -73,7 +73,6 @@ export function Skills() {
               "User flow & interaction design",
               "Accessibility basics",
               "Design-to-code handoff",
-              "AI-assisted development workflow",
             ]}
           />
         </div>
@@ -87,8 +86,8 @@ export function Skills() {
           </div>
           <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
             <p className="text-sm text-zinc-700">
-              <span className="font-semibold text-zinc-900">Web infrastructure:</span>{" "}
-              DNS configuration, email authentication (SPF/DKIM), HostUp hosting, Brevo email marketing & subscriber sync
+              <span className="font-semibold text-zinc-900">AI & tooling:</span>{" "}
+              Effective use of AI in development workflows — Claude (including agentic use), Figma Make, and prompt-driven prototyping
             </p>
           </div>
         </div>

@@ -21,8 +21,7 @@ export function About() {
         </p>
 
         <p className="mt-4 text-zinc-700 leading-relaxed">
-          I’m looking for an internship (LIA 2) for Spring 2026 — open to
-          opportunities worldwide (remote or on-site).
+          I’m currently available for work — open to opportunities worldwide (remote or on-site).
         </p>
       </div>
     </section>

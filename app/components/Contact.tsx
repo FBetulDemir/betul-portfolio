@@ -16,8 +16,7 @@ export function Contact() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <h2 className="text-2xl font-semibold tracking-tight">Get in Touch</h2>
         <p className="mt-2 text-zinc-600">
-          Open to internship opportunities (LIA 2, Spring 2026) — remote or
-          on-site worldwide.
+          Available for work — remote or on-site worldwide.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
