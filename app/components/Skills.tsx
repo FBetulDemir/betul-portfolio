@@ -41,6 +41,7 @@ export function Skills() {
               "HTML & CSS",
               "Tailwind CSS",
               "Responsive layout & design systems",
+              "WordPress (custom CSS, theme & plugin configuration)",
             ]}
           />
           <Block
@@ -67,8 +68,9 @@ export function Skills() {
           <Block
             title="UX & Collaboration"
             items={[
-              "Figma (wireframes, prototypes, UI)",
-              "User flow mapping",
+              "Figma (design systems, components, wireframes, prototypes)",
+              "UX research (user interviews, competitor analysis, empathy frameworks)",
+              "User flow & interaction design",
               "Accessibility basics",
               "Design-to-code handoff",
               "AI-assisted development workflow",
@@ -76,11 +78,19 @@ export function Skills() {
           />
         </div>
 
-        <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-          <p className="text-sm text-zinc-700">
-            <span className="font-semibold text-zinc-900">Backend basics:</span>{" "}
-            Node.js/Express, REST APIs, CORS, Amazon DynamoDB
-          </p>
+        <div className="mt-10 space-y-3">
+          <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <p className="text-sm text-zinc-700">
+              <span className="font-semibold text-zinc-900">Backend basics:</span>{" "}
+              Node.js/Express, REST APIs, CORS, Amazon DynamoDB, PHP basics
+            </p>
+          </div>
+          <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <p className="text-sm text-zinc-700">
+              <span className="font-semibold text-zinc-900">Web infrastructure:</span>{" "}
+              DNS configuration, email authentication (SPF/DKIM), HostUp hosting, Brevo email marketing & subscriber sync
+            </p>
+          </div>
         </div>
       </div>
     </section>

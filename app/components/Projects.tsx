@@ -6,7 +6,7 @@ type Project = {
   title: string;
   description: string;
   image: string;
-  imageFit?: "cover" | "contain";
+  imagePosition?: string;
   tech: string[];
   bullets: string[];
   learning: string;
@@ -16,10 +16,50 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "SHIPFLOW — Website Redesign & Implementation (Internship)",
+    description:
+      "Full end-to-end redesign and WordPress implementation of shipflow.se, a CFD simulation product for naval architects at Flowtech International AB. Sole designer and developer — from UX research through live deployment.",
+    image: "/projects/flowtech.png",
+    imagePosition: "top",
+    tech: [
+      "Figma",
+      "WordPress",
+      "PHP",
+      "HTML & CSS",
+      "UX Research",
+      "Interaction Design",
+      "DNS & Hosting",
+    ],
+    bullets: [
+      "Conducted UX research including user interviews, competitor analysis, and empathy frameworks",
+      "Built a full Figma design system: color styles, typography, and component library with variants",
+      "Implemented 15+ pages in WordPress with custom CSS architecture",
+      "Configured plugins: Yoast SEO, Contact Form 7, Flamingo, Brevo, WPForms, Fluent Support, Profile Builder, ACF",
+      "Set up DNS configuration, email authentication, and newsletter with subscriber sync",
+      "Researched and recommended HostUp hosting; managed full deployment to shipflow.se",
+    ],
+    learning:
+      "This internship gave me end-to-end ownership of a professional product site — from UX research and Figma design system to WordPress implementation and live deployment. I deepened my skills in interaction design, custom CSS architecture, CMS development, and web infrastructure (DNS, hosting, email auth).",
+    links: [
+      { label: "Live Site", href: "https://shipflow.se/" },
+      {
+        label: "View Figma Prototype",
+        href: "https://www.figma.com/proto/Io3wM3K8qWZKrRe4E5V75d/Flowtech?node-id=24-337&m=dev&scaling=scale-down&content-scaling=fixed&starting-point-node-id=24%3A337&page-id=0%3A1&show-proto-sidebar=1&t=zNurRvaGoc9YCr00-1",
+      },
+    ],
+    notes: [
+      {
+        text: "Delivered as sole designer and developer at Flowtech International AB, Gothenburg — LIA 2, March–May 2026.",
+      },
+    ],
+  },
+
+  {
     title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
     description:
       "I owned the UX/UI redesign end-to-end  (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
     image: "/projects/figma-organisation.png",
+    imagePosition: "top",
     tech: [
       "Figma",
       "UX research",
@@ -57,7 +97,6 @@ const projects: Project[] = [
     description:
       "A two-person household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard with weekly/monthly/all-time views.",
     image: "/projects/choresApp.png",
-    imageFit: "contain",
     tech: [
       "Next.js",
       "TypeScript",
@@ -171,8 +210,7 @@ export function Projects() {
           Selected Projects
         </h2>
         <p className="mt-2 text-zinc-600">
-          A focused selection of work demonstrating frontend development, UX
-          thinking, and practical product implementation.
+          Work spanning UX research, product design, and frontend development.
         </p>
       </div>
 
@@ -184,14 +222,12 @@ export function Projects() {
             <div className="grid gap-0 md:grid-cols-2">
               {/* Image placeholder */}
 
-              <div className="relative min-h-[220px] overflow-hidden rounded-t-2xl bg-zinc-100 md:rounded-l-2xl md:rounded-tr-none">
+              <div className="relative min-h-55 overflow-hidden rounded-t-2xl bg-zinc-100 md:rounded-l-2xl md:rounded-tr-none">
                 <Image
                   src={p.image}
                   alt={`${p.title} preview`}
                   fill
-                  className={
-                    p.imageFit === "contain" ? "object-contain" : "object-cover"
-                  }
+                  className={`object-cover ${p.imagePosition === "top" ? "object-top" : "object-center"}`}
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
