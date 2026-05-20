@@ -128,39 +128,39 @@ const projects: Project[] = [
     ],
   },
 
-  {
-    title: "Designish — Modern E-commerce Store",
-    description:
-      "A modern, responsive online clothing store with dynamic product fetching, product details, cart, and a clean UI built for a smooth shopping experience.",
-    image: "/projects/project-1.png",
-    tech: [
-      "React",
-      "Vite",
-      "Tailwind CSS",
-      "React Router",
-      "Fake Store API",
-      "Framer Motion",
-      "Local Storage",
-    ],
-    bullets: [
-      "Built responsive product listing and product detail views",
-      "Implemented shopping cart with quantity updates and persistence",
-      "Dynamic data fetching from Fake Store API",
-      "Key decisions: persisted cart in localStorage, route-based state with React Router, consistent UI states for async views",
-    ],
-    learning:
-      "I improved my ability to structure a frontend app around real user flows, and build a polished UI with strong responsiveness",
-    links: [
-      {
-        label: "View Code",
-        href: "https://github.com/FBetulDemir/ecommerce_website.git",
-      },
-      {
-        label: "Live Demo",
-        href: "https://ecommerce-website-designish.netlify.app/",
-      },
-    ],
-  },
+  // {
+  //   title: "Designish — Modern E-commerce Store",
+  //   description:
+  //     "A modern, responsive online clothing store with dynamic product fetching, product details, cart, and a clean UI built for a smooth shopping experience.",
+  //   image: "/projects/project-1.png",
+  //   tech: [
+  //     "React",
+  //     "Vite",
+  //     "Tailwind CSS",
+  //     "React Router",
+  //     "Fake Store API",
+  //     "Framer Motion",
+  //     "Local Storage",
+  //   ],
+  //   bullets: [
+  //     "Built responsive product listing and product detail views",
+  //     "Implemented shopping cart with quantity updates and persistence",
+  //     "Dynamic data fetching from Fake Store API",
+  //     "Key decisions: persisted cart in localStorage, route-based state with React Router, consistent UI states for async views",
+  //   ],
+  //   learning:
+  //     "I improved my ability to structure a frontend app around real user flows, and build a polished UI with strong responsiveness",
+  //   links: [
+  //     {
+  //       label: "View Code",
+  //       href: "https://github.com/FBetulDemir/ecommerce_website.git",
+  //     },
+  //     {
+  //       label: "Live Demo",
+  //       href: "https://ecommerce-website-designish.netlify.app/",
+  //     },
+  //   ],
+  // },
   {
     title: "Chappy — Real-Time Chat Application",
     description:
