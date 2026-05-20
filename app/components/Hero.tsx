@@ -34,7 +34,7 @@ export function Hero() {
           </a>
 
           <a
-            href="/cv/F_Betul_Demir_K_2026_CV.pdf"
+            href="/cv/Betul-demir-cv.pdf"
             download
             className="inline-flex items-center justify-center rounded-lg border border-zinc-200 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-50">
             Download CV
