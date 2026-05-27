@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
     description:
       "I owned the UX/UI redesign end-to-end  (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
-    image: "/projects/framsteg-figma.png",
+    image: "/projects/framsteg_white_bg.png",
     imagePosition: "top",
     tech: [
       "Figma",
@@ -88,6 +88,42 @@ const projects: Project[] = [
     notes: [
       {
         text: "Full redesign is confidential; private walkthrough available upon request (interviews / recruiters).",
+      },
+    ],
+  },
+
+  {
+    title: "Agora — Anonymous Community Platform (Thesis Project)",
+    description:
+      "A full-stack community platform enabling anonymous dialogue about gender equality in academia. Designed in Figma from research through to implementation, with an integrated Gemini AI assistant and real-time Supabase backend.",
+    image: "/projects/agora.png",
+    imagePosition: "top",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Figma",
+      "Gemini API",
+    ],
+    bullets: [
+      "Conducted literature review and benchmarking of community platforms to inform design decisions",
+      "Designed full UI in Figma — wireframes, prototypes, and iterative revisions with academic supervisor",
+      "Built anonymous post feed, threaded comments, hashtag filtering, and emoji avatar profiles",
+      "Implemented dynamic Trending Topics word cloud based on real hashtag activity",
+      "Integrated Gemini API as an AI assistant for gender equality questions",
+      "Added Resource Hub with curated external articles and light/dark theme with localStorage persistence",
+      "Modelled relational database in Supabase (PostgreSQL) with Row Level Security",
+    ],
+    learning:
+      "This thesis project pushed me through the full product lifecycle — academic research, ethical design decisions around anonymity, Figma prototyping, and full-stack implementation. I tackled complex challenges in social feature data modelling and learned to integrate an AI API responsibly in a sensitive context.",
+    links: [
+      { label: "Live Demo", href: "https://agora-connect.vercel.app/" },
+    ],
+    notes: [
+      {
+        text: "Thesis project (Examensarbete) at NBI-Handelsakademin. Design supervised by Dr. Jasmina Maric, Interaction Design & Software Engineering, Chalmers University of Technology.",
       },
     ],
   },
@@ -161,37 +197,24 @@ const projects: Project[] = [
   //     },
   //   ],
   // },
-  {
-    title: "Chappy — Real-Time Chat Application",
-    description:
-      "A full-stack chat app with public/locked channels, direct messages, and JWT authentication. Built to demonstrate practical frontend + backend integration and deployment.",
-    image: "/projects/chappyApp.png",
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "DynamoDB",
-      "JWT",
-      "Zustand",
-    ],
-    bullets: [
-      "Language: Swedish UI",
-      "Demo account: username: test / password: test123",
-      "Implemented JWT-based authentication with secure login and registration",
-      "Built public and locked channels with owner-only deletion rules",
-      "Developed channel messaging with usernames",
-      "Built private direct messages (DM) between users",
-      "Added user account management with self-delete functionality",
-      "Integrated AWS DynamoDB using a single-table design",
-    ],
-    learning:
-      "This project deepened my understanding of full-stack architecture, especially authentication flows, authorization rules, and frontend–backend coordination. I also learned to deploy a combined frontend and backend application and handle real-world issues such as static file serving and environment configuration.",
-    links: [
-      { label: "View Code", href: "https://github.com/FBetulDemir/chappy-app" },
-      { label: "Live Demo", href: "https://chappy-app-hk0i.onrender.com" },
-    ],
-  },
+  // {
+  //   title: "Chappy — Real-Time Chat Application",
+  //   description:
+  //     "A full-stack chat app with public/locked channels, direct messages, and JWT authentication. Built to demonstrate practical frontend + backend integration and deployment.",
+  //   image: "/projects/chappyApp.png",
+  //   tech: ["React", "TypeScript", "Node.js", "Express", "DynamoDB", "JWT", "Zustand"],
+  //   bullets: [
+  //     "Implemented JWT-based authentication with secure login and registration",
+  //     "Built public and locked channels with owner-only deletion rules",
+  //     "Developed channel messaging with usernames",
+  //     "Built private direct messages (DM) between users",
+  //     "Added user account management with self-delete functionality",
+  //     "Integrated AWS DynamoDB using a single-table design",
+  //   ],
+  //   learning:
+  //     "This project deepened my understanding of full-stack architecture, especially authentication flows, authorization rules, and frontend–backend coordination.",
+  //   links: [{ label: "View Code", href: "https://github.com/FBetulDemir/chappy-app" }],
+  // },
 ];
 
 function Badge({ children }: { children: React.ReactNode }) {
