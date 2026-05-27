@@ -97,7 +97,7 @@ const projects: Project[] = [
     description:
       "A full-stack community platform enabling anonymous dialogue about gender equality in academia. Designed in Figma from research through to implementation, with an integrated Gemini AI assistant and real-time Supabase backend.",
     image: "/projects/agora.png",
-    imagePosition: "top",
+    imagePosition: "contain",
     tech: [
       "Next.js",
       "TypeScript",
@@ -245,7 +245,7 @@ export function Projects() {
             <div className="grid gap-0 md:grid-cols-2">
               {/* Image placeholder */}
 
-              <div className={`relative min-h-55 overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none ${p.imagePosition === "contain" ? "bg-white" : "bg-zinc-100"}`}>
+              <div className={`relative min-h-72 overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none ${p.imagePosition === "contain" ? "bg-white" : "bg-zinc-100"}`}>
                 <Image
                   src={p.image}
                   alt={`${p.title} preview`}
