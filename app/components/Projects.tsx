@@ -120,6 +120,7 @@ const projects: Project[] = [
       "This thesis project pushed me through the full product lifecycle — academic research, ethical design decisions around anonymity, Figma prototyping, and full-stack implementation. I tackled complex challenges in social feature data modelling and learned to integrate an AI API responsibly in a sensitive context.",
     links: [
       { label: "Live Demo", href: "https://agora-connect.vercel.app/" },
+      { label: "View Code", href: "https://github.com/FBetulDemir/Agora.git" },
     ],
     notes: [
       {
