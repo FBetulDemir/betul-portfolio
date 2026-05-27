@@ -19,8 +19,8 @@ const projects: Project[] = [
     title: "SHIPFLOW — Website Redesign & Implementation (Internship)",
     description:
       "Full end-to-end redesign and WordPress implementation of shipflow.se, a CFD simulation product for naval architects at Flowtech International AB. Sole designer and developer — from UX research through live deployment.",
-    image: "/projects/flowtech.png",
-    imagePosition: "top",
+    image: "/projects/shipflow-flowtech.png",
+    imagePosition: "contain",
     tech: [
       "Figma",
       "WordPress",
@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: "Framsteg — UX/UI Redesign & Frontend Implementation (Internship)",
     description:
       "I owned the UX/UI redesign end-to-end  (user research → flows → full interface in Figma) and implemented key parts in Next.js with reusable components and consistent UI patterns, aligned closely with the Product Owner.",
-    image: "/projects/figma-organisation.png",
+    image: "/projects/framsteg-figma.png",
     imagePosition: "top",
     tech: [
       "Figma",
@@ -96,7 +96,7 @@ const projects: Project[] = [
     title: "ChoreQuest — Household Chore Tracker (Mobile App)",
     description:
       "A two-person household chore tracker where recurring chores are assigned points based on difficulty. Members complete chores, earn points, and compete on a leaderboard with weekly/monthly/all-time views.",
-    image: "/projects/choresApp.png",
+    image: "/projects/chore-app.png",
     tech: [
       "Next.js",
       "TypeScript",
@@ -222,12 +222,16 @@ export function Projects() {
             <div className="grid gap-0 md:grid-cols-2">
               {/* Image placeholder */}
 
-              <div className="relative min-h-55 overflow-hidden rounded-t-2xl bg-zinc-100 md:rounded-l-2xl md:rounded-tr-none">
+              <div className={`relative min-h-55 overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none ${p.imagePosition === "contain" ? "bg-white" : "bg-zinc-100"}`}>
                 <Image
                   src={p.image}
                   alt={`${p.title} preview`}
                   fill
-                  className={`object-cover ${p.imagePosition === "top" ? "object-top" : "object-center"}`}
+                  className={
+                    p.imagePosition === "contain"
+                      ? "object-contain object-center p-3"
+                      : `object-cover ${p.imagePosition === "top" ? "object-top" : "object-center"}`
+                  }
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
