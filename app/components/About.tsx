@@ -23,6 +23,20 @@ export function About() {
         <p className="mt-4 text-zinc-700 leading-relaxed">
           I’m currently available for work — open to opportunities worldwide (remote or on-site).
         </p>
+
+        <div className="mt-6 pt-6 border-t border-zinc-100">
+          <p className="text-sm text-zinc-500">
+            Frontend Developer (FED24) · NBI-Handelsakademin · Passed with Distinction ·{" "}
+            <a
+              href="https://verify.trueoriginal.com/11D6E742-E508-E7A1-B536-E4FA8B7A7D6F/?ref=direct-copy"
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-4 hover:text-zinc-700 transition-colors"
+            >
+              Verify credential →
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
